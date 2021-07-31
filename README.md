@@ -1,10 +1,4 @@
-# data_science_neo4j_docker
-Docker template for basic data science packages to interface with Neo4j
-
-## Introduction
-
-This container is based on the Juptyer data science container along side creating a Neo4j database on your local machine. This container does NOT include support for GPU-based deep learning packages (that will be a separate repo).  There are a lot of Python packages in this container that you might not use and so this container might be a bit bloated.  It is more of a generic container to get you started.
-
+# Neo4j with Data Science setup
 ## To run this container
 
 First, build the container from the CLI:
@@ -19,7 +13,8 @@ Then start the container:
 docker-compose up
 ```
 
-This will start up both a Jupyter Lab notebook at `localhost:8888` (note that there will be a token associated with this which you will need to grab as that container is starting) as well as the Neo4j browser at `localhost:7474`.  This are both configurable to whatever port you want.
+- Jupyter Lab notebook: localhost:8888
+- The Neo4j browser: localhost:7474 (ID: neo4j / Password: 1234)
 
 When you are done with the container, stop it vial `CTRL-c` and then:
 
